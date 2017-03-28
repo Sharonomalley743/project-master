@@ -1,0 +1,255 @@
+/* nav bar for all pages css */
+.navbar-fixed-top li a:hover:not(.active) 
+{
+	background-color: #3A2D42;
+	color:white;
+}
+.navbar-fixed-top li a:visited 
+{
+	background-color: #3A2D42;
+	color:white;
+}
+
+.navbar-fixed-top li.right {
+    float: right;
+}
+/*the dropdown fixed top navbar*/
+#wrap	
+{
+	width: 100%; /* Spans the width of the page */
+	height: 62px;
+	margin: 0; /* Ensures there is no space between sides of the screen and the menu */
+	z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+	position: relative;
+	background-color: #160514;
+}
+.navbar-fixed-top
+{
+	height: 58px;
+	padding: 3px ;
+	margin: 0;
+	position: absolute; /* Ensures that the menu doesn’t affect other elements */
+	border-right: 1px solid #160514;
+	background-color: #160514;
+}
+
+.navbar-fixed-top li 	
+{
+	height: auto;
+	width: 200px;  /* Each menu item is 200px wide */
+	float: left;  /* This lines up the menu items horizontally */
+	text-align: center;  /* All text is placed in the center of the box */
+	list-style: none;  /* Removes the default styling (bullets) for the list */
+	font: normal bold 16px/1.2em Arial, Verdana, Helvetica;
+	padding: 0;
+	margin: 0;
+	background-color: #160514;
+}
+.navbar-fixed-top a
+{
+	padding: 18px 0;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+	text-decoration: none;  /* Removes the default hyperlink styling. */
+	border-left: 1px solid #3A2D42; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
+	border-right: 1px solid #3A2D42; /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
+	color: white; /* Text color is white */
+	display: block;
+}
+.navbar-fixed-top li a:hover 
+{
+	background-color: transparent;
+}
+.navbar-fixed-top li ul 	
+{
+	display: none;  /* Hides the drop-down menu */
+	height: auto;
+	margin: 0; /* Aligns drop-down box underneath the menu item */
+	padding: 0; /* Aligns drop-down box underneath the menu item */
+}
+
+.navbar-fixed-top li:hover ul 	
+{
+	display: block; /* Displays the drop-down box when the menu item is hovered over */
+}
+.navbar-fixed-top li ul li 
+{
+	background-color: #756175;
+}
+.navbar-fixed-top li ul li a 	
+{
+	border-left: 1px solid #1f5065;
+	border-right: 1px solid #1f5065;
+	border-top: 1px solid #3A2D42;
+	border-bottom: 1px solid #3A2D42;
+}
+.navbar-fixed-top li ul li a:hover	
+{
+	background-color: #756175;
+}
+.col-sm-3 
+{
+	background-color: #3A2D42
+}
+/* end of css for nav */
+
+@media screen and (max-width: 1250px)
+{
+   li.home 
+    {
+   		cursor: pointer;
+   	}
+   	.navbar-fixed-top
+   	{
+   		 position: absolute;
+    	 display: block;
+    	 float:left;
+   	}
+   	.copy
+   	{
+   		   display: none;
+		    position: fixed;
+		    margin:0;
+		    padding:0;
+		    top:59px;
+		    left:0px;
+   	}
+   	.ccp1
+   	{
+   		    display: none;
+		    position: fixed;
+		    margin:0;
+		    padding:0;
+		    top:110px;
+		    left:0px;
+   	}
+   	.ccp2
+   	{
+   		    display: none;
+		    position: fixed;
+		    margin:0;
+		    padding:0;
+		    top:165px;
+		    left:0px;
+   	}
+   	.ccp3
+   	{
+   		  display: none;
+		    position: fixed;
+		    margin:0;
+		    padding:0;
+		    top:210px;
+		    left:0px;
+   	}
+   	.ccp4
+   	{
+   		  display: none;
+		    position: fixed;
+		    margin:0;
+		    padding:0;
+		    top:265px;
+		    left: 0px;
+   	}
+   	.copy li ul li a
+   	{
+   		   display: none;
+		    position: absolute;
+   	}
+	.navbar-fixed-top:hover ul
+		{
+		    display: block;
+		}
+}
+
+/*content on index5 page the contact page*/
+
+[class*="col-"]
+{
+	float:left;
+	padding: 15px;
+}
+.col-3
+{
+	width:33.3%;
+	text-align: middle;
+}
+.col-4
+{
+	width:44.4%;
+}
+.col-5
+{
+	width:20.3;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+/* css for footer on each page */
+footer
+{
+	background-color: #160514;
+	color: white;
+	min-width:100%;
+	min-height:5%;
+	display: block;
+	margin-bottom: 0%;
+	position:absolute;
+}
+footer a.hash
+{
+	color: white;
+}
+footer a.hash:hover {
+    color: #167277;
+}
+input[type=email], input[type=submit]
+{
+	color: black;
+}
+/* end of css for footer*/
+/*  Fatommas CSS */
+
+.col-sm-3 {
+  background-color: #3A2D42
+}
+P { text-align: center }
+H2 { text-align: center }
+h4 { text-align: center }
+H3 { text-align: center }
+h1 { text-align: center }
+.button {
+    background-color: #756175;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+   position: absolute;
+}
+  .button:hover {
+        background-color: #3A2D42;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+    }
+    .button:visited{
+          background-color: #3A2D42;
+          color: white;
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+.button:focus {
+  background-color: #3A2D42;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+.carousel-inner >.item > img {
+    min-width: 100%;
+    height: 500px;
+}
